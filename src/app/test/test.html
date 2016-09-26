@@ -1,0 +1,85 @@
+<div>
+<ul class="w3-theme-l2">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#">Wells</a></li>
+  <li><a href="#">Assets</a></li>
+  <li><a href="#">Admin</a></li>
+</ul>
+
+</div>
+<div style="margin-left:200px;padding:50px 16px;height:1000px;">
+  <h2>Angular Material 2 Tabs</h2>
+
+<md-tab-group>
+  <md-tab>
+    <template md-tab-label>One</template>
+    <template md-tab-content>
+      <h3>Some tab content</h3>
+      <p>... Hey, it's Bob and Dave !</p>
+    </template>
+  </md-tab>
+  <md-tab>
+    <template md-tab-label>Two</template>
+    <template md-tab-content>
+      <h3>Some more tab content</h3>
+      <p>... yada yada yada</p>
+    </template>
+  </md-tab>
+</md-tab-group>
+
+<h3>Some Material 2 Buttons residing on a Card</h3>
+    <md-card>
+      <button md-button>FLAT</button>
+      <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
+      <button md-raised-button color="primary">PRIMARY RAISED</button>
+      <button md-raised-button color="accent">ACCENT RAISED</button>
+    </md-card>
+
+<h3>A Material 2 Input with prefix "$" and suffix ".00"</h3>
+
+<md-input placeholder="amount" align="end">
+  <span md-prefix>$&nbsp;</span>
+  <span md-suffix>.00</span>
+</md-input>
+
+<div>
+  <div style="float:left">
+    <h3>Some Material 2 Radio Buttons residing on a Card</h3>
+    <h4>Gamma is disabled</h4>
+    <md-card>
+      <md-radio-button name="symbol">Alpha</md-radio-button>
+      <md-radio-button name="symbol">Beta</md-radio-button>
+      <md-radio-button name="symbol" disabled>Gamma</md-radio-button>
+    </md-card>
+   </div> 
+
+<div style="float:left;padding: 0 30px">
+  <h3>Material 2 Menu</h3>
+  <h4>menu position is "after" and "below" button</h4>
+  <!-- menu opens when trigger button is clicked -->
+  <button style="margin-left:100px" md-icon-button [md-menu-trigger-for]="menu">
+   <md-icon>arrow_drop_down</md-icon>click for menu 
+  </button>
+
+  <md-menu x-position="after" y-position="below" #menu="mdMenu">
+    <button md-menu-item> Refresh </button>
+    <button md-menu-item> Settings </button>
+    <button md-menu-item> Help </button>
+    <button md-menu-item disabled> Sign Out </button>
+  </md-menu>
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+<footer>
+  <div class="w3-container w3-theme" style="margin-left:200px;padding:1px">
+    <p style="text-align:center">  © Pioneer Natural Resources 2016</p>
+  </div> 
+</footer>
